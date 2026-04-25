@@ -1,0 +1,49 @@
+شوكة وسكينة (img_3): <i class="fa-solid fa-utensils"></i>
+
+علامة مرجعية (img_4): 
+
+ساعة وتاريخ (img_5): <i class="fa-solid fa-clock-rotate-left"></i>
+
+ترس/إعدادات (img_6): <i class="fa-solid fa-gear"></i>
+
+قائمة (img_7): <i class="fa-solid fa-bars"></i>
+
+نجمة (img_8): <i class="fa-solid fa-star"></i>
+
+ساعة (img_9): <i class="fa-solid fa-clock"></i>
+
+شعلة/تريند (img_10): <i class="fa-solid fa-fire"></i>
+
+مستخدمين (img_11): <i class="fa-solid fa-users"></i>
+
+مشاركة (img_12): <i class="fa-solid fa-share-nodes"></i>
+
+تحذير (img_13): <i class="fa-solid fa-triangle-exclamation"></i>
+
+الصف الثاني (من اليسار إلى اليمين)
+
+قائمة مهام (img_14): <i class="fa-solid fa-list-check"></i>
+
+كتاب مفتوح (img_15): <i class="fa-solid fa-book-open"></i>
+
+رسم بياني دائري (img_16): <i class="fa-solid fa-chart-pie"></i>
+
+لمبة/فكرة (img_17): <i class="fa-solid fa-lightbulb"></i>
+
+قطرة زيت/وقود (img_18): <i class="fa-solid fa-droplet"></i>
+
+دمبل/رياضة (img_19): <i class="fa-solid fa-dumbbell"></i>
+
+غصن/نبات (img_20): <i class="fa-solid fa-leaf"></i>
+
+قطرة ماء (img_21): <i class="fa-solid fa-droplet"></i>
+
+شتلة/نبات صغير (img_22): <i class="fa-solid fa-seedling"></i>
+
+صندوق/مكعب (img_23): <i class="fa-solid fa-box"></i>
+
+علامة صح (img_24): <i class="fa-solid fa-circle-check"></i>
+
+الصف الثالث
+
+تحديث/مزامنة (img_25): <i class="fa-solid fa-arrows-rotate"></i>

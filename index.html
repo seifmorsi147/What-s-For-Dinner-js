@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ========== Start Navbar ========== -->
+    <nav class="navbar navbar-expand-lg bg-light my-nav py-0 shadow-sm">
+      <div class="container">
+        <div class="nav-brand d-flex justify-content-center align-items-center">
+          <div
+            class="icon d-flex justify-content-center align-items-center me-3 rounded-circle shadow-lg"
+          >
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div class="content">
+            <h1>What's For Dinner</h1>
+            <p>Your daily meal inspiration</p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars hover"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link hover hover d-flex justify-content-staalign-items-start align-items-center"
+              aria-current="page"
+              href="#"
+              ><i class="fa-solid fa-bookmark"></i><span>Saved Recipes</span>
+            </a>
+            <a
+              class="nav-link hover hover d-flex justify-content-staalign-items-start align-items-center"
+              href="#"
+              ><i class="fa-solid fa-clock-rotate-left"></i><span>Recent</span>
+            </a>
+            <a
+              class="nav-link hover hover d-flex justify-content-staalign-items-start align-items-center"
+              href="#"
+              ><i class="fa-solid fa-gear"></i><span>Settings</span>
+            </a>
+            <a
+              class="nav-link hover hover d-flex justify-content-staalign-items-start align-items-center"
+              href="#"
+            >
+              <div class="image">
+                <img
+                  class="w-100"
+                  src="./images/imgi_1_avatar-4.png"
+                  alt="..."
+                />
+              </div>
+              <span>Profile</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== End Navbar ========== -->
+    <!-- ========== Start main ========== -->
+    <main class="py-5 px-4">
+      <div class="container px-md-5">
+        <div class="box row bg-white rounded-4 shadow-sm">
+          <div id="recipe-image-container"
+            class="image p-4 d-flex flex-column justify-content-between align-items-center col-sm-12 col-xl-5 "
+          >
+            <div
+              class="box-rstes align-self-start mt-2 ms-2 w-fit px-3 py-2 bg-white rounded-5 shadow-lg d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-star text-yellow me-2 fs-14"></i>
+              <span class="rate me-2 text-d fw-bold fs-14" id="rate">4.8</span>
+              <span class="riv text-p fs-sm" id="reviews">(356 reviews)</span>
+            </div>
+            <div
+              class="info w-100 mb-2 bg py-2 px-md-4 py-md-4 rounded-4 shadow-lg d-flex justify-content-around align-items-center"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-center me-3 my-1 "
+              >
+                <i class="fa-solid fa-clock fs-18 fs-24 mb-1 orange"></i>
+                <p class="mb-0 text-p fs-sm">Prep Time</p>
+                <p class="mb-0 text-d fw-bold fs-14" id="time-prep">10 min</p>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center me-3 my-1 "
+              >
+                <i class="fa-solid fa-fire fs-18 fs-24 mb-1 text-danger"></i>
+                <p class="mb-0 text-p fs-sm">Cook Time</p>
+                <p class="mb-0 text-d fw-bold fs-14" id="time-cook">15 min</p>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-between align-items-center my-1 "
+              >
+                <i class="fa-solid fa-users fs-18 fs-24 mb-1 text-primary"></i>
+                <p class="mb-0 text-p fs-sm">Servings</p>
+                <p class="mb-0 text-d fw-bold fs-14" id="Servings">2 people</p>
+              </div>
+            </div>
+          </div>
+          <div class="content col-sm-12 col-xl-7 p-3 p-md-5">
+            <div
+              class="head mb-2 d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <div class="mb-3">
+                  <span id="badge-level" class="rounded-4 text-success bg-success-subtle"
+                    >Easy</span
+                  >
+                  <span id="badge-type" class="rounded-4 text-primary bg-primary-subtle"
+                    >Seafood
+                  </span>
+                </div>
+                <div>
+                  <h3 class="text-d fw-bold fs-1 mb-2 fs-24 pt-4 pt-lg-0">Shrimp Scampi</h3>
+                  <p class="text-p fs-5 fs-14">
+                    Garlicky shrimp in white wine butter sauce
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center align-self-start align-self-lg-center">
+                <div class="icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <ul
+              class="nav nav-pills mb-3 w-100 py-3"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item " role="presentation">
+                <button
+                  class="nav-link active text-p fs-sm fs-6 fw-bolder"
+                  id="pills-Ingredients-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Ingredients"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Ingredients"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-list-check me-2"></i>
+                  Ingredients
+                </button>
+              </li>
+              <li class="nav-item m-l-auto  " role="presentation">
+                <button
+                  class="nav-link text-p fs-sm fs-6 fw-bolder"
+                  id="pills-Instructions-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Instructions"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Instructions"
+                  aria-selected="false"
+                >
+                  <i class="fa-solid fa-book-open me-2"></i>
+                  Instructions
+                </button>
+              </li>
+              <li class="nav-item m-l-auto  " role="presentation">
+                <button
+                  class="nav-link text-p fs-sm fs-6 fw-bolder"
+                  id="pills-Nutrition-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Nutrition"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Nutrition"
+                  aria-selected="false"
+                >
+                  <i class="fa-solid fa-chart-pie me-2"></i>
+                  Nutrition
+                </button>
+              </li>
+              <li class="nav-item m-top m-l-auto" role="presentation">
+                <button
+                  class="nav-link text-p fs-sm fs-6 fw-bolder"
+                  id="pills-Chef-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Chef"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Chef"
+                  aria-selected="false"
+                >
+                  <i class="fa-solid fa-lightbulb me-2"></i>
+                  Chef's Tips
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane my-tap fade show active"
+                id="pills-Ingredients"
+                role="tabpanel"
+                aria-labelledby="pills-Ingredients-tab"
+                tabindex="0"
+              >
+                <ul class="Ingredients">
+                  <li>
+                    <div>1</div>
+                    <span>400g large shrimp, peeled </span>
+                  </li>
+                  <li>
+                    <div>2</div>
+                    <span>300g linguine pasta </span>
+                  </li>
+                  <li>
+                    <div>3</div>
+                    <span>6 cloves garlic, minced </span>
+                  </li>
+                  <li>
+                    <div>4</div>
+                    <span>1/2 cup white wine </span>
+                  </li>
+                  <li>
+                    <div>5</div>
+                    <span>4 tablespoons butter </span>
+                  </li>
+                  <li>
+                    <div>6</div>
+                    <span>2 tablespoons olive oil </span>
+                  </li>
+                  <li>
+                    <div>7</div>
+                    <span>Fresh parsley, chopped </span>
+                  </li>
+                  <li>
+                    <div>8</div>
+                    <span>Lemon juice and zest </span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Instructions"
+                role="tabpanel"
+                aria-labelledby="pills-Instructions-tab"
+                tabindex="0"
+              >
+                <div class="Instructions">
+                  <div class="bog">
+                    <div>1</div>
+                    <p>
+                      Cook linguine according to package directions. Reserve 1
+                      cup pasta water.
+                    </p>
+                  </div>
+                  <div class="bog">
+                    <div>2</div>
+                    <p>
+                      Heat olive oil and 2 tablespoons butter in a large pan.
+                      Add garlic and red pepper flakes, cook for 1 minute.
+                    </p>
+                  </div>
+                  <div class="bog">
+                    <div>3</div>
+                    <p>
+                      Add shrimp, cook until pink on both sides, about 3-4
+                      minutes. Remove and set aside.
+                    </p>
+                  </div>
+                  <div class="bog">
+                    <div>4</div>
+                    <p>
+                      Add white wine to pan, simmer for 2 minutes. Add remaining
+                      butter and lemon juice.
+                    </p>
+                  </div>
+                  <div class="bog">
+                    <div>5</div>
+                    <p>
+                      Return shrimp to pan, add cooked pasta and toss. Add pasta
+                      water if needed.
+                    </p>
+                  </div>
+                  <div class="bog">
+                    <div>6</div>
+                    <p>
+                      Garnish with parsley, lemon zest, and serve immediately.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Nutrition"
+                role="tabpanel"
+                aria-labelledby="pills-Nutrition-tab"
+                tabindex="0"
+              >
+                <div class="container">
+                  <div class="Nutrition row">
+                    <div
+                      class="box-1 col-sm-12 col-md-5 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="inner d-flex align-items-center">
+                        <div class="icon">
+                          <i class="fa-solid fa-fire orange"></i>
+                        </div>
+                        <span>Calories</span>
+                      </div>
+                      <span class="s-2">520 kcal</span>
+                    </div>
+                    <div
+                      class="box-1 col-sm-12 col-md-5 ms-auto d-flex justify-content-between align-items-center"
+                    >
+                      <div class="inner d-flex align-items-center">
+                        <div class="icon bg-primary-subtle">
+                          <i class="fa-solid fa-dumbbell text-primary"></i>
+                        </div>
+                        <span>Protein</span>
+                      </div>
+                      <span class="s-2">36g</span>
+                    </div>
+                    <div
+                      class="box-1 col-sm-12 col-md-5 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="inner d-flex align-items-center">
+                        <div class="icon bg-warning-subtle">
+                          <i class="fa-solid fa-leaf text-warning-emphasis"></i>
+                        </div>
+                        <span>Carbohydrates</span>
+                      </div>
+                      <span class="s-2">54g</span>
+                    </div>
+                    <div
+                      class="box-1 col-sm-12 col-md-5 d-flex ms-auto justify-content-between align-items-center"
+                    >
+                      <div class="inner d-flex align-items-center">
+                        <div class="icon bg-danger-subtle">
+                          <i class="fa-solid fa-droplet text-danger"></i>
+                        </div>
+                        <span>Fat</span>
+                      </div>
+                      <span class="s-2">18g</span>
+                    </div>
+                    <div
+                      class="box-1 col-sm-12 col-md-5 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="inner d-flex align-items-center">
+                        <div class="icon bg-success-subtle">
+                          <i class="fa-solid fa-seedling text-success"></i>
+                        </div>
+                        <span>Fiber</span>
+                      </div>
+                      <span class="s-2">3g</span>
+                    </div>
+                    <div
+                      class="box-1 col-sm-12 col-md-5 d-flex ms-auto justify-content-between align-items-center"
+                    >
+                      <div class="inner d-flex align-items-center">
+                        <div class="icon bg-pep-sub">
+                          <i class="fa-solid fa-box text-pep"></i>
+                        </div>
+                        <span>Sodium</span>
+                      </div>
+                      <span class="s-2">620mg</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Chef"
+                role="tabpanel"
+                aria-labelledby="pills-Chef-tab"
+                tabindex="0"
+              >
+                <div class="tips">
+                  <div
+                    class="tep d-flex justify-content-start align-items-center"
+                  >
+                    <i class="fa-solid fa-circle-check orange"></i>
+                    <p>Don't overcook shrimp - they cook very quickly</p>
+                  </div>
+                  <div
+                    class="tep d-flex justify-content-start align-items-center"
+                  >
+                    <i class="fa-solid fa-circle-check orange"></i>
+                    <p>Use good quality white wine for best flavor</p>
+                  </div>
+                  <div
+                    class="tep d-flex justify-content-start align-items-center"
+                  >
+                    <i class="fa-solid fa-circle-check orange"></i>
+                    <p>Toss pasta in sauce for maximum flavor absorption</p>
+                  </div>
+                    <div
+                    class="tep d-flex justify-content-start align-items-center"
+                  >
+                    <i class="fa-solid fa-circle-check orange"></i>
+                    <p>Add extra lemon for bright, fresh taste</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="my-btn   shadow-lg">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ========== End main ========== -->
+<script src="./js/main.js" ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
