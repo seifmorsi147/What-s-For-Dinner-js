@@ -388,7 +388,16 @@ main .box .content .my-btn:hover {
 }
 @media screen and (max-width: 484px) {
   .m-top {
-    margin-top: 0.5rem;
+    margin-top: 5px;
+  }
+   .m-l-a {
+    margin-left: auto;
+  }
+  .m-r{
+    margin-right: 20px;
+  }
+  .m-l{
+    margin-left: 20px;
   }
 }
 @media screen and (min-width: 484px) {
